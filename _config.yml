@@ -1,3 +1,4 @@
-title: My Jekyll Site
-description: Một trang đơn giản bằng Jekyll
+markdown: kramdown
 theme: minima
+plugins:
+  - jekyll-feed
