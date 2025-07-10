@@ -1,188 +1,220 @@
-/* ======= Reset & Fonts ======= */
+/* ==== RESET & BASE ==== */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
-  font-family: 'Inter', sans-serif;
-  background-color: #ffffff;
-  color: #000000;
+  font-family: "Inter", sans-serif;
   line-height: 1.6;
+  color: #333;
+  background: #fff;
 }
-section {
-  padding: 60px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-h1, h2, h3 {
-  font-weight: 600;
+img {
+  max-width: 100%;
+  display: block;
 }
 a {
   text-decoration: none;
   color: inherit;
 }
+ul {
+  list-style: none;
+}
 
-/* ======= HERO SECTION ======= */
-.hero {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  align-items: flex-start;
+/* ==== HERO ==== */
+#hero {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(to bottom, #f4f4f4, #ffffff);
 }
-.hero h1 {
-  font-size: 2.5rem;
+.intro-text h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5em;
 }
-.hero p {
-  font-size: 1.125rem;
+.intro-text p {
   max-width: 600px;
+  margin: 0 auto 2em;
+  font-size: 1.2rem;
   color: #666;
 }
-.hero-roles {
+.roles {
   display: flex;
-  gap: 20px;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 40px;
 }
-.hero-role {
-  width: 240px;
-  height: 240px;
+.role-card {
   background: #f9f9f9;
   border-radius: 12px;
   padding: 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  width: 300px;
   text-align: center;
-  gap: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
-.hero-role .icon-wrapper {
-  width: 64px;
-  height: 64px;
-  background-color: #e0e0e0;
+.icon-wrapper {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 16px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.icon-wrapper svg {
+  width: 36px;
+  height: 36px;
+  fill: white;
+}
+.bg-blue { background: #0092b3; }
+.bg-purple { background: #9100e6; }
+.bg-green { background: #00c47f; }
 
-/* ======= ABOUT SECTION ======= */
-.about {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+/* ==== ABOUT SECTION ==== */
+.about-section {
+  padding: 80px 20px;
+  background: #fff;
 }
-.about h2 {
+.section-title {
+  text-align: center;
   font-size: 2rem;
+  margin-bottom: 40px;
 }
-.about-item {
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
+.intro-text {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  text-align: center;
 }
-.about-item .icon-wrapper {
-  width: 40px;
-  height: 40px;
-  background-color: #eee;
-  border-radius: 50%;
+.info-block {
+  margin-bottom: 40px;
+}
+.info-title {
+  font-size: 1.4rem;
+  margin-bottom: 16px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  gap: 10px;
 }
-.about-item h3 {
-  margin-bottom: 8px;
+.icon {
+  width: 20px;
+  height: 20px;
 }
-.about-item p {
-  margin-bottom: 4px;
+.info-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+.info-main {
+  font-weight: 500;
+}
+.info-time {
+  color: #888;
+  font-size: 0.9rem;
+}
+.info-link {
+  display: inline-block;
+  margin-top: 8px;
+  color: #0092b3;
+  font-weight: 500;
 }
 
-/* ======= PROJECTS SECTION ======= */
-.projects {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
+/* ==== PROJECT SECTION ==== */
+.projects-section {
+  padding: 80px 20px;
+  background: #fafafa;
 }
-.projects h2 {
-  font-size: 2rem;
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
 }
 .project-card {
-  width: 100%;
-  max-width: 600px;
-  border-radius: 8px;
+  background: #fff;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  background-color: #fff;
+  width: 340px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
-.project-card img {
+.project-thumb img {
   width: 100%;
   height: 235px;
   object-fit: cover;
 }
-.project-card-content {
-  padding: 20px;
+.project-title {
+  font-size: 1.2rem;
+  padding: 16px;
 }
-.project-card-content h3 {
-  font-size: 1.25rem;
-  margin-bottom: 10px;
+.btn-view {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  background: #000;
+  color: white;
+  border-top: 1px solid #eee;
+  font-weight: bold;
 }
-.project-card-content a {
-  color: #007BFF;
-  font-weight: 500;
-  font-size: 0.95rem;
+.view-all-wrapper {
+  text-align: center;
+  margin-top: 40px;
+}
+.btn-view-all {
+  background: #000;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: bold;
 }
 
-/* ======= TOOLS SECTION ======= */
-.tools {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-.tools h2 {
-  font-size: 2rem;
+/* ==== TOOLS SECTION ==== */
+.tools-section {
+  padding: 80px 20px;
+  background: #fff;
 }
 .tools-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 20px;
-}
-.tool-item {
-  background-color: #f7f7f7;
-  border-radius: 6px;
-  padding: 16px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
 }
-.tool-item img {
+.tool-card {
+  text-align: center;
+  width: 120px;
+}
+.tool-card img {
   width: 48px;
   height: 48px;
-  object-fit: contain;
+  margin-bottom: 8px;
 }
 
-/* ======= CONTACT SECTION ======= */
-.contact {
-  background-color: #fff;
-  border: 1px solid #f0f0f0;
-  border-radius: 12px;
-  padding: 40px 20px;
+/* ==== CONTACT ==== */
+.contact-section {
+  padding: 80px 20px;
+  background: #f1f1f1;
   text-align: center;
-  position: relative;
 }
-.contact h2 {
-  font-size: 2rem;
+.contact-section h2 {
+  font-size: 1.8rem;
   margin-bottom: 24px;
 }
-.contact a.button {
+.btn {
+  padding: 12px 24px;
+  border-radius: 6px;
   display: inline-block;
-  background-color: #000;
-  color: #fff;
-  padding: 14px 28px;
-  border-radius: 8px;
-  font-weight: 500;
-  transition: background 0.3s ease;
+  font-weight: bold;
 }
-.contact a.button:hover {
-  background-color: #333;
+.btn-dark {
+  background: #000;
+  color: #fff;
+}
+
+/* ==== FOOTER ==== */
+footer {
+  padding: 20px;
+  background: #000;
+  color: white;
+  text-align: center;
+  font-size: 0.9rem;
 }
