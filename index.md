@@ -80,16 +80,47 @@ title: Portfolio - Nguyễn Tiến Mạnh
 </section>
 
 <section id="tools">
-  <h2>Công cụ và phần mềm</h2>
+  <h2>Công cụ & phần mềm</h2>
   <div class="tools">
-    <div class="card">Ai<br />Illustrator</div>
-    <div class="card">Ps<br />Photoshop</div>
-    <div class="card">Xd<br />Adobe XD</div>
-    <div class="card">🖥️<br />Canva</div>
-    <div class="card">HTML5</div>
-    <div class="card">CSS3</div>
+    <div class="tool-card">
+      <div class="tool-icon">
+        <img src="https://framerusercontent.com/images/83tbCB6tYu5JHfUwgo6dqDukQl4.svg" alt="Illustrator">
+      </div>
+      <p>Illustrator</p>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon">
+        <img src="https://framerusercontent.com/images/4QRuC7SpMfvpJ9mVUmq8OtF794.svg" alt="Photoshop">
+      </div>
+      <p>Photoshop</p>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon">
+        <img src="https://framerusercontent.com/images/TE8Ef60HPtgHgxe9fPI8n44NMu0.svg" alt="Adobe XD">
+      </div>
+      <p>Adobe XD</p>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon">
+        <img src="https://framerusercontent.com/images/2c7sebYn8gKcYqnXfA4NjQtqw.svg" alt="Canva">
+      </div>
+      <p>Canva</p>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon">
+        <img src="https://framerusercontent.com/images/oWZSEqU9CkCqrvKYWs7ggbbd7Ns.svg" alt="HTML5">
+      </div>
+      <p>HTML5</p>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon">
+        <img src="https://framerusercontent.com/images/Rein5rUZgVUYVemycKeqenDAGg.svg" alt="CSS3">
+      </div>
+      <p>CSS3</p>
+    </div>
   </div>
 </section>
+
 
 <section id="contact" class="cta">
   <h3>Bạn có ý tưởng dự án nào muốn thảo luận không?</h3>
