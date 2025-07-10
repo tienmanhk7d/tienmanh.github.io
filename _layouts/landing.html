@@ -21,17 +21,54 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  <aside>
-    <img decoding="async" width="1360" height="1360" sizes="48px" srcset="https://framerusercontent.com/images/Dl6ilREiy553RT5GlrxZULOZCks.jpg?scale-down-to=512 512w,https://framerusercontent.com/images/Dl6ilREiy553RT5GlrxZULOZCks.jpg?scale-down-to=1024 1024w,https://framerusercontent.com/images/Dl6ilREiy553RT5GlrxZULOZCks.jpg 1360w" src="https://framerusercontent.com/images/Dl6ilREiy553RT5GlrxZULOZCks.jpg" alt="" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover">
-    <h1>Nguyễn Tiến Mạnh</h1>
-    <p>Graphic Designer<br />Network Admin<br />Event Technician</p>
-    <nav>
-      <a href="#about">Giới thiệu</a>
-      <a href="#projects">Dự án</a>
-      <a href="#tools">Kỹ năng</a>
-      <a href="#contact">Liên hệ</a>
-    </nav>
-  </aside>
+  <aside class="sidebar">
+  <!-- Profile -->
+  <div class="profile">
+    <div class="avatar">
+      <img src="https://framerusercontent.com/images/Dl6ilREiy553RT5GlrxZULOZCks.jpg" alt="Nguyễn Tiến Mạnh">
+    </div>
+    <div class="profile-info">
+      <h2>Nguyễn Tiến Mạnh</h2>
+      <p>
+        Graphic Designer<br>
+        Network Administration<br>
+        Event Technician
+      </p>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <a href="#home" class="nav-item active">
+      <span class="icon">
+        <!-- Home icon SVG -->
+        <svg viewBox="0 0 256 256"><path d="M224,120v96a8,8,0,0,1-8,8H160a8,8,0,0,1-8-8V164a4,4,0,0,0-4-4H108a4,4,0,0,0-4,4v52a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V120a16,16,0,0,1,4.69-11.31l80-80a16,16,0,0,1,22.62,0l80,80A16,16,0,0,1,224,120Z"></path></svg>
+      </span>
+      <span>Trang chủ</span>
+    </a>
+    <a href="#about" class="nav-item">
+      <span class="icon">
+        <!-- About icon -->
+        <svg viewBox="0 0 256 256"><path d="M229.19,213c-15.81-27.32-40.63-46.49-69.47-54.62a70,70,0,1,0-63.44,0C67.44,166.5,42.62,185.67,26.81,213a6,6,0,1,0,10.38,6C56.4,185.81,90.34,166,128,166s71.6,19.81,90.81,53a6,6,0,1,0,10.38-6ZM70,96a58,58,0,1,1,58,58A58.07,58.07,0,0,1,70,96Z"></path></svg>
+      </span>
+      <span>Giới thiệu</span>
+    </a>
+    <a href="#projects" class="nav-item">
+      <span class="icon">
+        <!-- Projects icon -->
+        <svg viewBox="0 0 256 256"><path d="M106,112a6,6,0,0,1,6-6h32a6,6,0,0,1,0,12H112A6,6,0,0,1,106,112ZM230,72V200a14,14,0,0,1-14,14H40a14,14,0,0,1-14-14V72A14,14,0,0,1,40,58H82V48a22,22,0,0,1,22-22h48a22,22,0,0,1,22,22V58h42A14,14,0,0,1,230,72ZM94,58h68V48a10,10,0,0,0-10-10H104A10,10,0,0,0,94,48ZM38,72v42.79A186,186,0,0,0,128,138a185.91,185.91,0,0,0,90-23.22V72a2,2,0,0,0-2-2H40A2,2,0,0,0,38,72ZM218,200V128.37A198.12,198.12,0,0,1,128,150a198.05,198.05,0,0,1-90-21.62V200a2,2,0,0,0,2,2H216A2,2,0,0,0,218,200Z"></path></svg>
+      </span>
+      <span>Các dự án</span>
+    </a>
+    <a href="#contact" class="nav-item">
+      <span class="icon">
+        <!-- Contact icon -->
+        <svg viewBox="0 0 256 256"><path d="M224,50H32a6,6,0,0,0-6,6V192a14,14,0,0,0,14,14H216a14,14,0,0,0,14-14V56A6,6,0,0,0,224,50ZM208.58,62,128,135.86,47.42,62ZM216,194H40a2,2,0,0,1-2-2V69.64l86,78.78a6,6,0,0,0,8.1,0L218,69.64V192A2,2,0,0,1,216,194Z"></path></svg>
+      </span>
+      <span>Liên hệ</span>
+    </a>
+  </nav>
+</aside>
 
   <main>
     {{ content }}
