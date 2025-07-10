@@ -109,27 +109,47 @@ title: Portfolio - Nguyễn Tiến Mạnh
 </section>
 
 
-<section class="tools-section">
-  <h2 class="section-title">Công cụ và phần mềm</h2>
-  <div class="tools-grid">
+<section id="tools">
+  <h2>Công cụ & phần mềm</h2>
+  <div class="tools">
     <div class="tool-card">
-      <img src="https://framerusercontent.com/images/83tbCB6tYu5JHfUwgo6dqDukQl4.svg" alt="Illustrator" />
-      <h3>Illustrator</h3>
+      <div class="tool-icon">
+        <img src="https://framerusercontent.com/images/83tbCB6tYu5JHfUwgo6dqDukQl4.svg" alt="Illustrator">
+      </div>
+      <p>Illustrator</p>
     </div>
     <div class="tool-card">
-      <img src="https://framerusercontent.com/images/4QRuC7SpMfvpJ9mVUmq8OtF794.svg" alt="Photoshop" />
-      <h3>Photoshop</h3>
+      <div class="tool-icon">
+        <img src="https://framerusercontent.com/images/4QRuC7SpMfvpJ9mVUmq8OtF794.svg" alt="Photoshop">
+      </div>
+      <p>Photoshop</p>
     </div>
     <div class="tool-card">
-      <img src="https://framerusercontent.com/images/TE8Ef60HPtgHgxe9fPI8n44NMu0.svg" alt="Adobe XD" />
-      <h3>Adobe XD</h3>
+      <div class="tool-icon">
+        <img src="https://framerusercontent.com/images/TE8Ef60HPtgHgxe9fPI8n44NMu0.svg" alt="Adobe XD">
+      </div>
+      <p>Adobe XD</p>
     </div>
     <div class="tool-card">
-      <img src="https://framerusercontent.com/images/2c7sebYn8gKcYqnXfA4NjQtqw.svg" alt="Canva" />
-      <h3>Canva</h3>
+      <div class="tool-icon">
+        <img src="https://framerusercontent.com/images/2c7sebYn8gKcYqnXfA4NjQtqw.svg" alt="Canva">
+      </div>
+      <p>Canva</p>
     </div>
     <div class="tool-card">
-      <img src="https://framerusercontent.com/images/oWZSEqU9Ck
+      <div class="tool-icon">
+        <img src="https://framerusercontent.com/images/oWZSEqU9CkCqrvKYWs7ggbbd7Ns.svg" alt="HTML5">
+      </div>
+      <p>HTML5</p>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon">
+        <img src="https://framerusercontent.com/images/Rein5rUZgVUYVemycKeqenDAGg.svg" alt="CSS3">
+      </div>
+      <p>CSS3</p>
+    </div>
+  </div>
+</section>
 
 
 <section id="contact" class="section contact-section">
