@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background: #f5f5f5; /* Ghi sáng */
+  background: #f5f5f5;
   color: #333;
   line-height: 1.6;
   display: flex;
@@ -58,38 +58,53 @@ nav a:hover {
   color: #007bff;
 }
 
-/* Main Content */
+/* Main layout */
 main {
-  margin-left: calc(240px + 40px); /* width + margin trái/phải */
+  margin-left: calc(240px + 40px);
   padding: 40px;
   max-width: 960px;
   width: 100%;
   margin-right: auto;
 }
 
+/* Section spacing */
 section {
   margin-bottom: 60px;
 }
 
+/* Section container box */
+section > .section-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+}
+
+/* Headings */
 h2 {
   font-size: 24px;
   margin-bottom: 16px;
   color: #111;
 }
 
-.roles,
-.tools,
-.projects {
+h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+/* Grid layout */
+.roles, .tools, .projects, .info-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
 }
 
+/* Card style */
 .card {
   background: #fff;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 0 10px rgba(0,0,0,0.03);
   text-align: center;
   margin-bottom: 20px;
 }
@@ -99,6 +114,15 @@ h2 {
   border-radius: 6px;
 }
 
+/* Info box for education/experience */
+.info-box {
+  padding: 20px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* CTA */
 .cta {
   background: #eee;
   text-align: center;
@@ -116,6 +140,7 @@ h2 {
   cursor: pointer;
 }
 
+/* Footer */
 footer {
   text-align: center;
   font-size: 13px;
