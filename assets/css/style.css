@@ -19,13 +19,15 @@ body {
 aside {
   position: sticky;
   top: 20px;
-  width: 240px;
+  width: 300px;
+  height
   margin: 20px;
   background: #fff;
-  padding: 30px 20px;
-  border-radius: 10px;
+  border-radius: 12px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   height: fit-content;
+  padding: 24px;
+  
 }
 aside img {
   border-radius: 50%;
@@ -77,6 +79,38 @@ section {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
 }
 
+.icon-wrap {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1200px;
+  will-change: transform;
+  transition: all 0.3s ease;
+}
+
+/* Màu nền riêng cho từng icon */
+.icon-wrap.design {
+  background-color: rgb(250, 254, 255); /* Xanh nhạt */
+}
+
+.icon-wrap.network {
+  background-color: rgba(240, 225, 255); /* Tím nhạt */
+}
+
+.icon-wrap.render {
+  background-color: rgba(225, 255, 240); /* Xanh lá nhạt */
+}
+
+/* SVG bên trong icon */
+.icon-wrap svg {
+  width: 28px;
+  height: 28px;
+}
+
+
 /* Headings */
 h2 {
   font-size: 24px;
@@ -96,6 +130,11 @@ h3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
+}
+
+/*roles style */
+.roles{
+  padding-top: 10px;
 }
 
 /* Card style */
