@@ -58,10 +58,10 @@ nav a:hover {
 
 /* Main layout */
 main {
-  padding: 40px;
+  padding: 40px 20px;
   max-width: 1400px;
   width: 100%;
-  margin: auto;
+  margin: 0 auto; /* ✅ Căn giữa ngang trang */
 }
 
 /* Section spacing */
