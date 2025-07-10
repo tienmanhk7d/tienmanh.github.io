@@ -18,45 +18,52 @@ ul {
   list-style: none;
 }
 
-/* ======Sidebar====*/
+/* ===== Sidebar ===== */
 .sidebar {
   width: 260px;
   background-color: #fff;
   border-radius: 12px;
   padding: 24px;
-  border: 1px solid #f3f3f3;
+  border: 1px solid #f0f0f0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  position: sticky;
+  top: 24px;
 }
 
-.profile .avatar {
+/* Profile */
+.profile {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.avatar img {
   width: 72px;
   height: 72px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 12px;
 }
-
-.name {
-  font-size: 1.2rem;
+.profile-info h2 {
+  font-size: 1.1rem;
   font-weight: 600;
-  margin-bottom: 4px;
+  margin: 0 0 4px;
 }
-
-.roles {
-  text-align: center;
-  color: #888;
-  font-size: 0.9rem;
-  margin-bottom: 24px;
+.profile-info p {
+  font-size: 0.85rem;
+  color: #777;
   line-height: 1.4;
+  white-space: pre-line; /* xuống dòng với <br> */
+  margin: 0;
 }
 
-.nav-links {
-  width: 100%;
+/* Navigation */
+.main-nav {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  width: 100%;
 }
 
 .nav-item {
@@ -65,14 +72,15 @@ ul {
   gap: 12px;
   padding: 10px 16px;
   border-radius: 8px;
+  font-size: 0.95rem;
   color: #333;
-  text-decoration: none;
   font-weight: 500;
-  transition: background-color 0.3s;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 .nav-item:hover {
-  background-color: #f0f0f0;
+  background-color: #f2f6ff;
+  color: #0066cc;
 }
 
 .nav-item.active {
@@ -83,7 +91,18 @@ ul {
 .nav-item .icon {
   width: 20px;
   height: 20px;
+  flex-shrink: 0;
+}
+
+.nav-item .icon svg {
+  width: 100%;
+  height: 100%;
   fill: #666;
+  transition: fill 0.2s;
+}
+
+.nav-item:hover .icon svg {
+  fill: #0099ff;
 }
 
 
