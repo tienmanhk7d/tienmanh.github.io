@@ -1,85 +1,124 @@
-/* Reset + Base */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+/* ========== Base Styles ========== */
+:root {
+  --main-font: 'Inter', sans-serif;
+  --gray-bg: #f7f7f7;
+  --gray-border: #eee;
 }
-html {
+
+body {
+  margin: 0;
+  font-family: var(--main-font);
+  line-height: 1.6;
+  color: #222;
+  background-color: #f5f5f5;
+  display: flex;
+  gap: 32px;
   scroll-behavior: smooth;
 }
-body {
-  font-family: 'Inter', sans-serif;
-  background: #f5f5f5;
-  color: #333;
-  line-height: 1.6;
-  display: flex;
-}
 
-/* Sidebar */
-aside {
+/* ========== Sidebar ========== */
+.sidebar {
+  width: 260px;
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid var(--gray-border);
   position: sticky;
   top: 20px;
-  width: 300px;
-  height
-  margin: 20px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   height: fit-content;
-  padding: 24px;
-  
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
-aside img {
+
+.profile {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.avatar {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 16px;
   border-radius: 50%;
-  width: 70px;
-  margin-bottom: 10px;
+  overflow: hidden;
 }
-aside h1 {
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-info h2 {
   font-size: 18px;
-  margin-bottom: 4px;
+  margin: 0;
 }
-aside p {
+.profile-info p {
   font-size: 14px;
   color: #777;
-  line-height: 1.4;
-}
-nav {
-  margin-top: 40px;
-}
-nav a {
-  display: block;
-  color: #333;
-  margin: 12px 0;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-nav a:hover {
-  color: #007bff;
-  font-weight: 500;
+  margin-top: 6px;
 }
 
-/* Main layout */
+/* ========== Navigation ========== */
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #222;
+  transition: background 0.2s;
+}
+.nav-item:hover {
+  background-color: #f0f0f0;
+}
+.nav-item.active {
+  background-color: #efefef;
+  font-weight: 600;
+}
+
+.nav-item .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+}
+.nav-item svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+/* ========== Main Content ========== */
 main {
-  padding: 40px 20px;
+  padding: 40px;
   max-width: 1400px;
   width: 100%;
-  margin: 0 auto; /* ✅ Căn giữa ngang trang */
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
-/* Section spacing */
 section {
   margin-bottom: 60px;
 }
 
-/* Section container box */
-.section-box {
-  background: #fff;
-  border-radius: 12px;
-  padding: 30px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
 }
 
-/* Card ngang */
+/* ========== "Xin chào" Section with Horizontal Cards ========== */
+.roles {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 .card.horizontal {
   display: flex;
   flex-direction: row;
@@ -87,22 +126,30 @@ section {
   justify-content: flex-start;
   height: 240px;
   padding: 24px;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid var(--gray-border);
   text-align: left;
   gap: 16px;
+  transition: box-shadow 0.3s ease;
+}
+.card.horizontal:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-/* Nền icon */
 .icon-wrap {
   width: 64px;
   height: 64px;
-  border-radius: 1200px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
 }
-
-/* Màu nền riêng từng loại */
+.icon-wrap svg {
+  width: 28px;
+  height: 28px;
+}
 .icon-wrap.design {
   background-color: rgb(250, 254, 255);
 }
@@ -113,97 +160,12 @@ section {
   background-color: rgba(225, 255, 240);
 }
 
-.icon-wrap svg {
-  width: 28px;
-  height: 28px;
-}
-
-/* Text căn trái */
 .card-text {
+  font-size: 18px;
   font-weight: 600;
-  font-size: 18px;
 }
 
-
-
-/* Headings */
-h2 {
-  font-size: 24px;
-  margin-bottom: 16px;
-  color: #111;
-}
-h3 {
-  font-size: 18px;
-  margin-bottom: 8px;
-}
-
-/* Grid layout */
-.roles,
-.tools,
-.projects,
-.info-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
-
-/*roles style */
-.roles{
-  padding-top: 10px;
-}
-
-/* Card style */
-.card {
-  background: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.03);
-  text-align: center;
-  margin-bottom: 20px;
-  transition: all 0.3s ease;
-}
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-}
-
-/* Card block in "Xin chào" section */
-.roles .card {
-  height: 240px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-weight: 500;
-  font-size: 16px;
-}
-
-/* Project image styling */
-.projects .card img {
-  width: 390px;
-  height: 235px;
-  object-fit: cover;
-  border-radius: 8px;
-  display: block;
-  margin: 0 auto 12px;
-}
-
-/* Info block in "Giới thiệu" */
-.info-box {
-  padding: 20px;
-  border-radius: 10px;
-  background: #fff;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
-}
-.info-box:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-}
-
-/* Tools */
+/* ========== Tools Grid ========== */
 .tools {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -219,7 +181,6 @@ h3 {
   text-align: center;
   transition: transform 0.3s ease;
 }
-
 .tool-card:hover {
   transform: translateY(-4px);
 }
@@ -228,67 +189,86 @@ h3 {
   width: 64px;
   height: 64px;
   margin: 0 auto 12px;
-  background: rgb(247, 247, 247);
+  background: var(--gray-bg);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .tool-icon img {
   width: 32px;
   height: 32px;
 }
 
+.tool-card p {
+  font-weight: 500;
+  font-size: 15px;
+  margin: 0;
+}
 
-/* CTA */
+/* ========== CTA Section ========== */
 .cta {
-  background: #eee;
   text-align: center;
-  padding: 40px 20px;
-  border-radius: 10px;
-}
-.cta button {
-  background: #000;
-  color: #fff;
-  border: none;
-  padding: 12px 24px;
-  font-size: 16px;
-  border-radius: 6px;
-  cursor: pointer;
+  padding: 60px 20px;
+  background-color: #fafafa;
+  border-radius: 12px;
 }
 
-/* Footer */
+.cta h3 {
+  font-size: 22px;
+  margin-bottom: 24px;
+}
+
+.cta button {
+  background-color: #007acc;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.cta button:hover {
+  background-color: #005f99;
+}
+
+/* ========== Footer ========== */
 footer {
   text-align: center;
-  font-size: 13px;
-  color: #888;
-  margin-top: 60px;
-  margin-bottom: 20px;
+  font-size: 14px;
+  color: #777;
+  margin-top: 40px;
 }
 
-/* Responsive */
+/* ========== Responsive ========== */
 @media (max-width: 768px) {
   body {
     flex-direction: column;
+    padding: 0;
   }
-  aside {
-    width: 100%;
-    margin: 0;
-    padding: 20px;
+
+  .sidebar {
     position: relative;
-    border-radius: 0;
-    border-bottom: 1px solid #eee;
-    box-shadow: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  main {
+    padding: 24px;
+  }
+
+  .roles {
+    flex-direction: column;
+  }
+
+  .card.horizontal {
+    height: auto;
+    flex-direction: column;
     text-align: center;
   }
-  main {
-    margin-left: 0;
-    margin-right: 0;
-    padding: 20px;
-  }
-  .projects .card img {
-    width: 100%;
-    height: auto;
+
+  .nav-item {
+    justify-content: center;
   }
 }
