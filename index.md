@@ -43,7 +43,6 @@ title: Portfolio - Nguyễn Tiến Mạnh
     <p class="intro-text">
       Tôi là Mạnh – một Nhà Thiết Kế Sáng Tạo đầy đam mê với nhiều vai trò khác nhau. Tôi chuyên tạo ra các trải nghiệm số trực quan, dễ sử dụng và giàu tính thẩm mỹ – nhằm giải quyết những vấn đề thực tiễn và mang lại hiệu quả rõ ràng.
     </p>
-
     <!-- Education -->
     <div class="info-block education">
       <h3 class="info-title"><i class="icon icon-edu"></i> Học vấn</h3>
@@ -59,7 +58,6 @@ title: Portfolio - Nguyễn Tiến Mạnh
       </ul>
       <a href="./about#education" class="info-link">Xem toàn bộ học vấn →</a>
     </div>
-
     <!-- Experience -->
     <div class="info-block experience">
       <h3 class="info-title"><i class="icon icon-exp"></i> Kinh nghiệm</h3>
@@ -71,7 +69,6 @@ title: Portfolio - Nguyễn Tiến Mạnh
       </ul>
       <a href="./about#experience" class="info-link">Xem toàn bộ kinh nghiệm →</a>
     </div>
-
     <!-- Certificate -->
     <div class="info-block certificate">
       <h3 class="info-title"><i class="icon icon-cert"></i> Chứng chỉ</h3>
@@ -97,7 +94,6 @@ title: Portfolio - Nguyễn Tiến Mạnh
       <h3 class="project-title">Omnifood: Revolutionizing Personalized Meal Delivery</h3>
       <a href="./projects/omnifood-revolutionizing-personalized-meal-delivery" class="btn-view">View Project</a>
     </div>
-
     <!-- Project 2 -->
     <div class="project-card">
       <div class="project-thumb">
@@ -107,7 +103,6 @@ title: Portfolio - Nguyễn Tiến Mạnh
       <a href="./projects/natours-elevating-adventure-travel-through-innovative-web-solutions" class="btn-view">View Project</a>
     </div>
   </div>
-
   <div class="view-all-wrapper">
     <a href="./projects" class="btn-view-all">View All Projects</a>
   </div>
@@ -135,7 +130,6 @@ title: Portfolio - Nguyễn Tiến Mạnh
     </div>
     <div class="tool-card">
       <img src="https://framerusercontent.com/images/oWZSEqU9Ck
-
 
 
 <section id="contact" class="section contact-section">
