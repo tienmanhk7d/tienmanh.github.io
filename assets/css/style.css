@@ -267,9 +267,13 @@ section {
 }
 
 /* ======= Footer ======= */
-footer {
+.footer {
+  display: flex;
+  align-items: center; 
+  justify-content: flex-start; 
   padding: 24px;
-  text-align: center;
   font-size: 0.9rem;
   color: #888;
+  border-top: 1px solid #eee;
+  height: 80px; 
 }
