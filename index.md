@@ -3,15 +3,25 @@ layout: landing
 title: Portfolio - Nguyễn Tiến Mạnh
 ---
 
-<section>
+<section id="intro">
   <h2>👋 Xin chào</h2>
-  <p>Tôi là Mạnh – một Nhà Thiết Kế Sáng Tạo đầy đam mê với nhiều vai trò khác nhau. Tôi tạo trải nghiệm số trực quan, thẩm mỹ để giải quyết vấn đề hiệu quả.</p>
+  <p>Tôi là Mạnh – một Nhà Thiết Kế Sáng Tạo đầy đam mê với nhiều vai trò khác nhau. Tôi tạo ra trải nghiệm số trực quan, dễ sử dụng và thẩm mỹ cao để giải quyết các vấn đề một cách hiệu quả.</p>
   <div class="roles">
-    <div class="card">🎨 <br /> Web Designer</div>
-    <div class="card">🔗 <br /> Network Administration</div>
-    <div class="card">📦 <br /> Render</div>
+    <div class="card">
+      <img src="https://img.icons8.com/ios/100/paint-palette.png" width="48" alt="Design" />
+      <div>Web Designer</div>
+    </div>
+    <div class="card">
+      <img src="https://img.icons8.com/ios/100/network-card.png" width="48" alt="Network" />
+      <div>Network Administration</div>
+    </div>
+    <div class="card">
+      <img src="https://img.icons8.com/ios/100/cube.png" width="48" alt="Render" />
+      <div>Render</div>
+    </div>
   </div>
 </section>
+
 
 <section id="about">
   <h2>Giới thiệu</h2>
@@ -41,12 +51,12 @@ title: Portfolio - Nguyễn Tiến Mạnh
   <h2>Các dự án</h2>
   <div class="projects">
     <div class="card">
-      <img src="https://via.placeholder.com/300x180?text=Omnifood" alt="Omnifood" />
+      <img src="https://via.placeholder.com/390x235.png?text=Omnifood" alt="Omnifood" />
       <p><strong>Omnifood:</strong><br /> Revolutionizing Personalized Meal Delivery</p>
     </div>
     <div class="card">
-      <img src="https://via.placeholder.com/300x180?text=Natours" alt="Natours" />
-      <p><strong>Natours:</strong><br /> Elevating Adventure Travel Through Web</p>
+      <img src="https://via.placeholder.com/390x235.png?text=Natours" alt="Natours" />
+      <p><strong>Natours:</strong><br /> Elevating Adventure Travel Through Innovative Web Solutions</p>
     </div>
   </div>
 </section>
