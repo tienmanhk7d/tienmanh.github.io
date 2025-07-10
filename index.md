@@ -15,22 +15,24 @@ title: Portfolio - Nguyễn Tiến Mạnh
 
 <section id="about">
   <h2>Giới thiệu</h2>
-  <div class="roles">
-    <div>
-      <strong>Học vấn</strong><br />
-      University of the Arts London – MA UX Design (2020–2022)
-    </div>
-    <div>
-      <strong>Khóa học khác</strong><br />
-      Nielsen Norman Group UX Certificate (2023)
-    </div>
-    <div>
-      <strong>Kinh nghiệm</strong><br />
-      Google – UX Designer (2022–Nay)
-    </div>
-    <div>
-      <strong>Chứng chỉ</strong><br />
-      Adobe – Web Designer (2019–2021)
+  <div class="section-box">
+    <div class="info-grid">
+      <div class="info-box">
+        <h3>🎓 Học vấn</h3>
+        <p><strong>University of the Arts London</strong><br />2020–2022</p>
+      </div>
+      <div class="info-box">
+        <h3>📘 Học vấn khác</h3>
+        <p>Nielsen Norman Group [NNG]<br />2023</p>
+      </div>
+      <div class="info-box">
+        <h3>📈 Kinh nghiệm</h3>
+        <p>Google – UX Designer<br />2022–Nay</p>
+      </div>
+      <div class="info-box">
+        <h3>📄 Chứng chỉ</h3>
+        <p>Adobe Web Designer<br />2019–2021</p>
+      </div>
     </div>
   </div>
 </section>
