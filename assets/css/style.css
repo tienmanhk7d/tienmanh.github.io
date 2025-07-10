@@ -1,10 +1,14 @@
 /* ======= Global Reset ======= */
+* {
+  box-sizing: border-box;
+  margin: 0; padding: 0;
+}
 body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
-  background-color: #fff;
+  font-family: 'Inter', sans-serif;
+  background: #f9f9f9;
   color: #333;
+  line-height: 1.6;
+  display: flex;
 }
 
 main {
