@@ -68,6 +68,7 @@ h2 {
   padding: 20px;
   box-shadow: 0 0 10px rgba(0,0,0,0.03);
   text-align: center;
+  margin-bottom: 20px;
 }
 .card img {
   width: 100%;
@@ -104,9 +105,14 @@ footer {
     position: relative;
     border-right: none;
     border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
   }
   main {
-    margin-left: 0;
+    margin-right: auto;
     padding: 20px;
+    max-width: 960px;
+    width: 100%;
   }
 }
+
