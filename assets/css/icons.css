@@ -1,0 +1,71 @@
+/* =========================
+   ICONS & SVG Styling
+   ========================= */
+
+/* Biểu tượng trong block "Giới thiệu", "Học vấn", "Kinh nghiệm", v.v. */
+.block-icon {
+  width: 48px;
+  height: 48px;
+  font-size: 32px;
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Icon trong nút (ví dụ: nút "View Project", "Liên hệ", mũi tên...) */
+.btn svg,
+a svg {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  fill: currentColor;
+  transition: transform 0.3s ease;
+}
+
+a:hover svg {
+  transform: translateX(4px);
+}
+
+/* Dành cho icon có nền tròn đậm */
+.icon-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Dành cho các blur overlay (ví dụ hover image blur trong Projects) */
+.blur-overlay {
+  position: absolute;
+  inset: 0;
+  border-radius: 6px;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.project-item:hover .blur-overlay {
+  opacity: 1;
+}
+
+/* Mũi tên SVG trong nút */
+.arrow-icon {
+  display: inline-block;
+  margin-left: 8px;
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  vertical-align: middle;
+  transition: transform 0.2s ease;
+}
+a:hover .arrow-icon {
+  transform: translateX(3px);
+}
