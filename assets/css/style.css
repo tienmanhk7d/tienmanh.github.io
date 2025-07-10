@@ -1,23 +1,15 @@
 /* ======= Global Reset ======= */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  margin: 0; padding: 0;
 }
 body {
-  font-family: 'Inter', sans-serif;
-  background: #f9f9f9;
-  color: #333;
+  font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
-  display: flex;
+  background-color: #fff;
+  color: #333;
 }
-
-main {
-  padding: 40px 20px;
-  max-width: 1400px;
-  width: 100%;
-  margin: 0 auto;
-}
-
 h1, h2, h3 {
   margin-top: 0;
 }
@@ -26,26 +18,35 @@ a {
   color: #0099ff;
 }
 ul {
-  padding: 0;
   list-style: none;
+  padding: 0;
 }
 
-/* ===== Sidebar ===== */
+/* ======= Layout ======= */
+body {
+  display: flex;
+}
 .sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
   width: 260px;
-  background-color: #fff;
-  border-radius: 12px;
   padding: 24px;
-  border: 1px solid #f0f0f0;
+  background-color: #fff;
+  border-right: 1px solid #eee;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
-  position: sticky;
-  top: 24px;
+  flex-shrink: 0;
+}
+main {
+  flex: 1;
+  padding: 0 32px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-/* Profile */
+/* ======= Sidebar ======= */
 .profile {
   text-align: center;
   margin-bottom: 32px;
@@ -60,71 +61,48 @@ ul {
 .profile-info h2 {
   font-size: 1.1rem;
   font-weight: 600;
-  margin: 0 0 4px;
 }
 .profile-info p {
-  font-size: 0.85rem;
-  color: #777;
+  color: #888;
+  font-size: 0.9rem;
   line-height: 1.4;
-  white-space: pre-line; /* xuống dòng với <br> */
-  margin: 0;
 }
-
-/* Navigation */
 .main-nav {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  width: 100%;
 }
-
 .nav-item {
   display: flex;
   align-items: center;
   gap: 12px;
   padding: 10px 16px;
   border-radius: 8px;
-  font-size: 0.95rem;
   color: #333;
   font-weight: 500;
-  transition: background-color 0.2s, color 0.2s;
+  transition: background-color 0.3s;
 }
-
+.nav-item .icon {
+  width: 20px;
+  height: 20px;
+}
+.nav-item svg {
+  width: 20px;
+  height: 20px;
+  fill: #666;
+}
 .nav-item:hover {
-  background-color: #f2f6ff;
-  color: #0066cc;
+  background-color: #f0f0f0;
 }
-
 .nav-item.active {
   background-color: #e6f0ff;
   font-weight: 600;
 }
 
-.nav-item .icon {
-  width: 20px;
-  height: 20px;
-  flex-shrink: 0;
-}
-
-.nav-item .icon svg {
-  width: 100%;
-  height: 100%;
-  fill: #666;
-  transition: fill 0.2s;
-}
-
-.nav-item:hover .icon svg {
-  fill: #0099ff;
-}
-
-
-/* ======= Layout & Containers ======= */
+/* ======= Sections ======= */
 section {
-  padding: 64px 24px;
-}
-.container {
-  max-width: 960px;
-  margin: 0 auto;
+  padding: 64px 0;
 }
 .section-title {
   font-size: 2rem;
@@ -132,10 +110,12 @@ section {
   text-align: center;
 }
 .intro-text {
-  max-width: 600px;
-  margin: 0 auto 40px auto;
+  max-width: 700px;
+  margin: 0 auto 40px;
   text-align: center;
 }
+
+/* ======= Hero Section ======= */
 .roles {
   display: flex;
   flex-wrap: wrap;
@@ -164,19 +144,12 @@ section {
   height: 36px;
   fill: #fff;
 }
-.bg-blue {
-  background-color: #0092b3;
-}
-.bg-purple {
-  background-color: #9100e6;
-}
-.bg-green {
-  background-color: #00b26f;
-}
+.bg-blue { background-color: #0092b3; }
+.bg-purple { background-color: #9100e6; }
+.bg-green { background-color: #00b26f; }
 
 /* ======= About Section ======= */
 .about-section .intro-text {
-  text-align: center;
   font-size: 1.1rem;
   margin-bottom: 48px;
 }
